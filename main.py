@@ -18,7 +18,7 @@ def main():
     make_request(configuration)
 
 
-# load_environment variables from
+# load_environment variables from the .env file
 def load_environment():
     # load .env file to environment
     load_dotenv()
@@ -32,6 +32,7 @@ def load_environment():
     return configuration
 
 
+# make_request is responsible for creating and sending the HTTP PATCH request as the domain already exists
 def make_request(configuration):
     deny_endpoint = f"https://api.nextdns.io/profiles/{configuration['profile_id']}/denylist/hex:{configuration['deny_domain']}"
 
