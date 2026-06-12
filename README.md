@@ -6,7 +6,7 @@ There are two primary ways of running this script.
 Create a .env file in the same directory. The .env file should have the following fields
     - API=YOUR_API_KEY
     - PROFILE=YOUR_PROFILE_ID  (This can be located within NextDNS)
-    - DENYURL=URL_TO_BE_ENABLED_OR_DENIED (This URL should already be added for the sake of this script)
+    - DENYURL=URL_TO_BE_ENABLED_OR_DISABLED (This URL should already be added in the NExtDNS GUI for the sake of this script. This             option simply toggeles whether the block is active or not)
 
 ## Using UV
 1. Clone project
